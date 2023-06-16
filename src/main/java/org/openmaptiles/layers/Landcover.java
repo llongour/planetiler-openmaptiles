@@ -127,7 +127,7 @@ public class Landcover implements
         .setMinPixelSizeOverrides(MIN_PIXEL_SIZE_THRESHOLDS)
         .setAttr(Fields.CLASS, clazz)
         .setAttr(Fields.SUBCLASS, subclass)
-        .setAttrWithMinzoom("crop", element.source().getTag("crop"), 14)
+        .setAttr("crop", element.source().getTag("crop"))
         .setNumPointsAttr(TEMP_NUM_POINTS_ATTR)
         .setMinZoom(7);
     }
